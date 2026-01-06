@@ -1,2 +1,2 @@
-python3 src/main.py "/rick0ll/"
+python3 src/main.py "/static_site_generator_bootdev/"
 
