@@ -13,7 +13,7 @@ def main():
     from_path = "content"
     dest_path = "docs"
     template_path = "template.html"
-    copy_static()
+    copy_static("docs")
     generate_pages_recursive(from_path, template_path, dest_path, base_path)
 
 

@@ -3,11 +3,11 @@ import shutil
 import re
 
 
-def copy_static():
-    path_dst = "public" if os.path.exists("public") else None
+def copy_static(path):
+    path_dst = path if os.path.exists(path) else None
     if path_dst is None:
-        os.mkdir("public")
-        path_dst = "public"
+        os.mkdir(path)
+        path_dst = path
     else:
         remove_all(path_dst)
 
